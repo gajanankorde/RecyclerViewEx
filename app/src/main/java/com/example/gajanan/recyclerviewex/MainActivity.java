@@ -79,7 +79,9 @@ public class MainActivity extends AppCompatActivity {
         //CustomAdapter customAdapter = new CustomAdapter(MainActivity.this, personNames,personImages);
         CustomAdapter customAdapter = new CustomAdapter(MainActivity.this, personNames,personImages,tenure);
 
-        recyclerView.addItemDecoration(new MyDividerItemDecoration(this, MyDividerItemDecoration.VERTICAL_LIST, 36));
+        //recyclerView.addItemDecoration(new MyDividerItemDecoration(this, MyDividerItemDecoration.VERTICAL_LIST, 36));
+
+        recyclerView.addItemDecoration(new MyDividerItemDecoration(this, LinearLayoutManager.VERTICAL));
 
         recyclerView.setAdapter(customAdapter); // set the Adapter to RecyclerView
     }

@@ -1,5 +1,7 @@
 package com.example.gajanan.recyclerviewex;
+
 import android.content.Context;
+import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -31,6 +33,7 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
         this.personImages=personImages;
     }
     */
+
     public CustomAdapter(Context context, ArrayList<String> personNames,ArrayList<Integer> personImages,ArrayList<String> tenure) {
         this.context = context;
         this.personNames = personNames;
@@ -119,6 +122,15 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
             public void onClick(View view) {
                 // display a toast with person name on item click
                 Toast.makeText(context, "You Clicked : "+personNames.get(position), Toast.LENGTH_SHORT).show();
+
+
+                Intent intent = new Intent(context, GalleryActivity.class);
+
+                intent.putExtra("personImages", personImages.get(position));
+
+                intent.putExtra("personNames", personNames.get(position));
+
+                context.startActivity(intent);
             }
         });
 

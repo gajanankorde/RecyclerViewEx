@@ -3,6 +3,11 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+    <!--
     <color name="person_name">#333333</color>
-    <color name="tenure">#8c8c8c</color>
+    <color name="tenure">#8c8c8c</color>-->
+
+    <color name="person_name">#ffffff</color>
+    <color name="tenure">#000000</color>
+
 </resources>

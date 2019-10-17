@@ -13,8 +13,6 @@
         android:textColor="#000"
         android:textSize="20sp" />
 
-
-
 </LinearLayout>
 -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -63,7 +61,7 @@
         android:text="ABCD"
         android:fontFamily="sans-serif-medium"
         android:textColor="@color/person_name"
-        android:textSize="18sp" />
+        android:textSize="20sp" />
     <TextView
         android:id="@+id/tenure"
         android:layout_width="wrap_content"
@@ -72,6 +70,6 @@
         android:text="ABCD"
         android:layout_marginTop="3dp"
         android:textColor="@color/tenure"
-        android:textSize="14sp" />
+        android:textSize="16sp" />
     </LinearLayout>
 </LinearLayout>

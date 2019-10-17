@@ -15,9 +15,6 @@ import com.bumptech.glide.Glide;
 import java.util.ArrayList;
 
 
-
-
-
 public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHolder> {
 
     ArrayList<String> personNames;
@@ -130,6 +127,7 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
 
                 intent.putExtra("personNames", personNames.get(position));
 
+                intent.putExtra("tenure", tenure.get(position));
                 context.startActivity(intent);
             }
         });
